@@ -16,12 +16,12 @@ def multiply(x, y):
 def divide(x, y):
     return x / y
 
-print("--- Simple Calulator Program ---")
+print("--- Simple Calulator Program ---\n")
 print("Select operation")
-print("1.Add")
-print("2.Subtract")
-print("3.Multiply")
-print("4.Divide")
+print("1.\tAddition")
+print("2.\tSubtract")
+print("3.\tMultiply")
+print("4.\tDivide")
 
 while True:
     # Take input from the user
