@@ -16,19 +16,23 @@ def multiply(x, y):
 def divide(x, y):
     return x / y
 
+def modulo(x, y):
+    return x % y
+
 print("--- Simple Calulator Program ---\n")
 print("Select operation")
 print("1.\tAddition")
 print("2.\tSubtract")
 print("3.\tMultiply")
 print("4.\tDivide")
+print("5.\tModulo")
 
 while True:
     # Take input from the user
-    choice = input("Enter choice(1/2/3/4): ")
+    choice = input("Enter choice(1/2/3/4/5): ")
 
     # Check if choice is one of the four options
-    if choice in ('1', '2', '3', '4'):
+    if choice in ('1', '2', '3', '4', '5'):
         num1 = float(input("Enter first number: "))
         num2 = float(input("Enter second number: "))
 
@@ -43,6 +47,9 @@ while True:
 
         elif choice == '4':
             print(num1, "/", num2, "=", divide(num1, num2))
+
+        elif choice == '5':
+            print(num1, "%", num2, "=", modulo(num1, num2))
         break
     else:
         print("Invalid Input")
