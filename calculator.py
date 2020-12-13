@@ -16,7 +16,7 @@ def multiply(x, y):
 def divide(x, y):
     return x / y
 
-
+print("--- Simple Calulator Program ---")
 print("Select operation")
 print("1.Add")
 print("2.Subtract")
